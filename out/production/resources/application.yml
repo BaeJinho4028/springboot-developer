@@ -16,8 +16,7 @@ spring:
       client:
         registration:
           google:
-            client-id: 8886
-            client-secret: GOC
+            client-id: 888669844866-2e7sj2hts2p0lv6me6gq5tioasm038b7.apps.googleusercontent.com
             scope:
               - email
               - profile
