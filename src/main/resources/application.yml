@@ -8,16 +8,5 @@ spring:
   h2:
     console:
       enabled: true
-  security:
-    oauth2:
-      client:
-        registration:
-          google: # /oauth2/authorization/google 이 주소를 동작하게 한다.
-            client-id:
-            client-secret:
-            redirect-uri: https://port-0-cochoonblog-cgw1f2almfw13zg.sel5.cloudtype.app/login/oauth2/code/google
-            scope:
-              - email
-              - profile
 jwt:
   issuer: ajufresh@gmail.com

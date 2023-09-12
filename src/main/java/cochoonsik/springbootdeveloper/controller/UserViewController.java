@@ -8,7 +8,7 @@ public class UserViewController {
 
     @GetMapping("/")
     public String welcome(){
-        return "oauthLogin";
+        return "articleList";
     }
     @GetMapping("/login")
     public String login(){
