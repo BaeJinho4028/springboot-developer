@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    url:  jdbc:mariadb://${TODO_MYSQL_HOST}:${TODO_MYSQL_PORT}/${TODO_DATA_BASE_NAME}?useSSL=false
+    #jdbc:mysql://localhost:3306/test
+    username: ${TODO_MYSQL_USER_NAME}
+    password: ${TODO_MYSQL_PASSWORD}
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update  # (1) ??? ?? ??
+    show-sql: false      # (2) SQL ?? ??
+    properties:
+      hibernate:
+        format_sql: true  # (3) SQL pretty print
+        dialect: org.hibernate.dialect.MariaDB103Dialect
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 888669844866-2e7sj2hts2p0lv6me6gq5tioasm038b7.apps.googleusercontent.com
+            client-secret: GOC
+            scope:
+              - email
+              - profile
+jwt:
+  issuer: ajufresh@gmail.com
+  secret_key: study-springboot

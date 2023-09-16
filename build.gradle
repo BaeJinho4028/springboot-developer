@@ -25,6 +25,7 @@ dependencies {
     implementation 'mysql:mysql-connector-java'
 
     runtimeOnly 'com.h2database:h2'
+    runtimeOnly 'org.mariadb.jdbc:mariadb-java-client' // MariaDB
 
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
