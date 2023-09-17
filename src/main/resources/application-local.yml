@@ -3,7 +3,7 @@ spring:
     activate:
       on-profile:
   jpa:
-    show-sql: true
+    show-sql: false
     properties:
       hibernate:
         format_sql: true
