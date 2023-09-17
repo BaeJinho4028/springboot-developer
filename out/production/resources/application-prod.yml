@@ -1,4 +1,7 @@
 spring:
+  config:
+    activate:
+      on-profile: prod
   datasource:
     url:  jdbc:mariadb://${TODO_MYSQL_HOST}:${TODO_MYSQL_PORT}/${TODO_DATA_BASE_NAME}?useSSL=false
     #jdbc:mysql://localhost:3306/test
@@ -8,7 +11,7 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update  # (1) ??? ?? ??
-    show-sql: true    # (2) SQL ?? ??
+    show-sql: false      # (2) SQL ?? ??
     properties:
       hibernate:
         format_sql: true  # (3) SQL pretty print
